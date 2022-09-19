@@ -5,13 +5,13 @@ import toast, { Toaster } from 'react-hot-toast';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import Filter from '../../components/Filter/Filter';
 import ContactList from '../../components/ContactList/ContactList';
-import MyPhonesPage from '../MyPhonePage/MyPhonesPage';
+// import MyPhonesPage from '../MyPhonePage/MyPhonesPage';
 
 import { Loader } from '../../components/Loader/loader';
 import { addContact, deleteContact, fetchContacts } from '../../redux/contacts/contacts-operation';
 import { setFilter } from '../../redux/filter/filter-slice';
 import { getFilter, visibleContacts, getLoaderStatus } from '../../redux/selectors';
-import useAuth from '../../shared/hooks/useAuth';
+// import useAuth from '../../shared/hooks/useAuth';
 
 
 
@@ -20,7 +20,7 @@ const Contacts = () => {
   const filter = useSelector(getFilter);
   const isLoaderActive = useSelector(getLoaderStatus);
 const dispatch = useDispatch();
-    const isLogin = useAuth();
+    // const isLogin = useAuth();
       
   useEffect(() => {
     dispatch(fetchContacts());
@@ -47,9 +47,9 @@ const dispatch = useDispatch();
   
   return (
     <div>
-      {!isLogin && <MyPhonesPage />}
+      {/* {!isLogin && <MyPhonesPage />}
       {isLogin && (
-        <div>
+        <div> */}
         <h1>Phonebook</h1>
           <ContactForm onSubmit={onAddContact}/>
           <h2>Contacts</h2>
@@ -57,8 +57,8 @@ const dispatch = useDispatch();
           {isLoaderActive && <Loader />}
           <ContactList contacts={contacts} onDeleteContact={onRemoveContact}/>
           <Toaster /> 
-           </div>
-      )}
+           {/* </div>
+      )} */}
     </div>
   );
 };
