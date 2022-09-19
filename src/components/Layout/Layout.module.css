@@ -1,0 +1,30 @@
+.form {
+    width: 650px;
+    margin: 100px auto;
+    padding: 20px 40px;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px darkred;
+}
+
+.header {
+    border-bottom: 1px solid darkred;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 700;
+    color: black;
+}
+
+.activeLink {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 800;
+    color: darkred;
+}

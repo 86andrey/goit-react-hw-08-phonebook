@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-right: 12px;
+    width: 30px;
+    height: 30px;
+}
+
+.name {
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    color: aliceblue;
+    background-color: darkred;
+}
