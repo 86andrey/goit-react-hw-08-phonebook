@@ -28,4 +28,5 @@ const Form = styled.div`
     border: 3px solid darkred;
     border-radius: 10px;
     padding: 15px;
+    margin-top: 20px;
     `;
